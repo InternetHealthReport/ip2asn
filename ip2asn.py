@@ -9,7 +9,7 @@ class ip2asn:
 
         self.db = db
         self.asname = {}
-        self.rtree = pickle.load(bz2.open(db, "rb"))
+        self.rtree = pickle.load(bz2.BZ2File(db, "rb"))
 
         if ixp is not None:
             with open(ixp) as fi:
