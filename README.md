@@ -1,5 +1,6 @@
 # ip2asn
 Simple tool that matches IP addresses to ASN at any point in time.
+Data structures are now compressed, if you used an older version of this repo you should clone it again.
 
 # Example
 Find the ASN for 8.8.8.8 (on Jan. 2017):
