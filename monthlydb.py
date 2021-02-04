@@ -41,7 +41,7 @@ rr = readrib.readrib("tmp/"+fname)
 rr.loadData()
 rr.savertree()
 
-symlink_force(rr.picklefile, "db/latest.pickle")
+symlink_force(os.path.basename(rr.picklefile), "db/latest.pickle")
 g = git.cmd.Git("./")
 g.pull()
 g.add(rr.picklefile)
