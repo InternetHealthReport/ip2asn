@@ -1,4 +1,4 @@
-# ip2asn
+# ip2asn: Mapping IP addresses to originating ASN
 Simple tool that matches IP addresses to ASN at any point in time.
 
 **Data structures are now compressed, if you used an older version of this repo you should clone it again (You should also use python3).**
