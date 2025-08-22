@@ -20,7 +20,7 @@ url ="http://archive.routeviews.org/route-views.wide/bgpdata/%s.%02d/RIBS/rib.%s
 
 today = None
 if len(sys.argv) < 3:
-    today = datetime.datetime.utcnow()
+    today = datetime.datetime.now(datetime.timezone.utc)
     month = today.month
     year = today.year
 else:
