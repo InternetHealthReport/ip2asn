@@ -2,3 +2,4 @@ py-radix
 arrow
 confluent_kafka
 msgpack
+GitPython
