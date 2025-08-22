@@ -6,6 +6,7 @@ import os
 import git
 import errno
 
+
 def symlink_force(target, link_name):
     try:
         os.symlink(target, link_name)
@@ -16,7 +17,8 @@ def symlink_force(target, link_name):
         else:
             raise e
 
-url ="http://archive.routeviews.org/route-views.wide/bgpdata/%s.%02d/RIBS/rib.%s%02d01.0000.bz2"
+
+url = "http://archive.routeviews.org/route-views.wide/bgpdata/%s.%02d/RIBS/rib.%s%02d01.0000.bz2"
 
 today = None
 if len(sys.argv) < 3:
@@ -35,7 +37,7 @@ except OSError:
     pass
 
 print("Downloading %s..." % completeurl)
-urllib.request.urlretrieve(completeurl, "tmp/"+fname )
+urllib.request.urlretrieve(completeurl, "tmp/"+fname)
 
 rr = readrib.readrib("tmp/"+fname)
 rr.loadData()
